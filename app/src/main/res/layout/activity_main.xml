@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <com.cloudpoint.plugins.sdk.adv.AdvView
+        android:id="@+id/adv_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:localPlayer="false">
+
+    </com.cloudpoint.plugins.sdk.adv.AdvView>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_a_main_device_no"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorGreyTranslucence"/>
+</FrameLayout>

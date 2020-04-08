@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_a_login_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_splash"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.SplashActivity">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/edt_a_login_num"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/shape_edt"
+        android:gravity="center"
+        android:hint="请输入设备编号"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorGrey"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_a_login_enter"
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="登录"
+        android:textSize="24sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_a_login_num" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_a_login_exit"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_a_login_loading"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_a_login_loading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreyTranslucence"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/group_a_login_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="pb_a_login_loading,v_a_login_loading" />
+</android.support.constraint.ConstraintLayout>
